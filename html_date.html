@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>프로그래밍</title>
+    <meta charset="utf-8"
+     name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right:1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+      }
+    </style>
+  </head>
+
+  <body>
+    <header><a href="http://localhost/index.html"><h1>HTML</h1></a></header>
+
+    <nav><a href="http://localhost/index.html"><strong>go back</strong></a></nav>
+
+    <h2>date input</h2>
+
+      <xmp>
+코드1
+<form action="inputs.php">
+ date: <input type="date" name="date" >
+ month: <input type="month" name="months">
+ <input type="submit">
+</form>
+
+코드2
+     <form action="inputs.php">
+      date:    <input type="date" name="dates" >
+      <input type="submit">
+    </form>
+
+     <form action="inputs.php">
+      month: <input type="month" name="months">
+      <input type="submit">
+     </form>
+*submit type는 하나의 form tag 로 둘러싸인 모든 input값을 동시에 서버로 전송
+      </xmp>
+<p>
+코드1
+     <form action="inputs.php">
+      date: <input type="date" name="dates" ><br>
+      month: <input type="month" name="months"><br>
+      <input type="submit">
+     </form>
+</p>
+<p>
+코드2
+     <form action="inputs.php">
+      date:    <input type="date" name="dates" >
+      <input type="submit">
+    </form>
+
+     <form action="inputs.php">
+      month: <input type="month" name="months">
+      <input type="submit">
+     </form>
+</p>
+
+
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html >
+
+<html>
+
+<head>
+	<title>프로그래밍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+
+	<style>
+
+	  header{
+	  	border-bottom:1px solid grey;
+	  	padding:20px
+
+	  }
+
+		header a{
+			text-decoration:none
+		}
+
+		body nav{
+			border-right: 1px solid grey;
+			width:250px;
+			height:1500px;
+			float:left
+		}
+
+		form ul{
+			list-style: none;
+		}
+
+
+		article img{
+			float:left
+
+		}
+		article p{
+			padding:1px
+		}
+		form ul li{
+			padding:1px
+		}
+여기는 스타일-화면에 표시되지 않는다. 텍스트가 은폐되는 유일한 구역
+그러나 이 텍스트 아래에 스타일 지정을 하면 그 스타일은 작동되지 않음.
+	</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <a href="http://localhost/index.html"><h1>HTML</h1></a>
+
+ </header>
+
+ <nav>
+<strong><a href="http://localhost/index.html">go back</a></strong><br>
+
+ </nav>
+
+
+
+<form action="http://localhost/login.php">
+	<ul>
+		<li>Id :<input type="text"  name="id" value="id"></li>
+		<li>Pwd: <input type="password" name="pwd" value="password"></li>
+		<li>Mail: <input type="text" name="mail" value="mail address"></li>
+		<strong>text input</strong>
+		<li><textarea name="text" id="" cols="50" rows="10">textarea</textarea></li>
+		<li>제출: <input type="submit"></li>
+	</ul>
+
+</form>
+<xmp>
+---코드
+
+ #css form ul {list-style:none}을 통하여 리스트 앞에 붙는 표시 제거
+ #form 태그의 action은 입력값을 전달받는 서버측 프로그램
+ #id는 값을 받아들이는 서버의 변수 혹은 컬럼명 이라고 할 수 있다
+ #value는 서버의 변수로 전달되는 값.
+ #text,passward input에 value 속성을 지정하고 값을 할당하면 초기입력된 상태가 된다.
+
+<p><h2>***input tag***</h2></p>
+<form action="http://localhost/login.php">
+	<ul>
+		<li>Id :<input type="text" name="id" value="id"></li>
+		<li>Pwd: <input type="password" name="pwd" value="password"></li>
+		<li>Mail: <input type="text" name="mail" value="mail address"></li>
+		<strong>text input</strong>
+		<li><textarea name="text" id="" cols="50" rows="10">textarea</textarea></li>
+		<li>제출: <input type="submit"></li>
+	</ul>
+
+</form></xmp>
+</body>
+</html>

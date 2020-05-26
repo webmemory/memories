@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>프로그래밍</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    header{
+      border-bottom:1px solid grey;
+      padding:20px
+    }
+    header a{
+      text-decoration:none
+    }
+    nav{
+      border-right:1px solid grey;
+      width:250px;
+      height:1500px;
+      float:left
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header><a href="http://localhost/index.html"><h1>HTML</h1></a></header>
+
+  <nav><strong><a href="http://localhost/index.html">go back</a></strong></nav>
+
+  <p><h2>외부 문서 삽입: iframe</h2></p>
+  <xmp>
+    기본코드
+    <body>
+      <iframe src="http://opentutorials.org" frameborder="10" width="500" height="500"></iframe>
+    </body>
+  </xmp>
+
+  <iframe src="http://opentutorials.org" frameborder="10" width="500" height="500"></iframe>
+
+  <xmp>
+  다음은 유튜브 동영상 아래 공유->퍼가기 에서 나오는 코드를 그대로 복사해 붙인 것.
+
+    <br><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/MLXlXCwA0T4"
+            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </xmp>
+
+  <br><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/MLXlXCwA0T4"
+            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <xmp>
+  다음은 iframe 에 sandbox라는 속성을 주었을 때 나오는 결과. sandbox는 불러들인
+  코드 안에서 자바스크립트의 작동을 중단시킴으로써 혹시라도 있을 수 있는 불량한
+  바이러스 기능이 작동되는 것을 방지한다. 신뢰할 수 없는 출처에서 가져온 코드에는
+  sandbox를 써서 나의 웹페이지가 방문자에게 위해를 끼치는 걸 막아야 한다.
+
+  sandbox는 또한 form 태그를 통해 웹페이지에서 뭔가를 입력한 후 서버에 전송하는
+  기능도 중단시킨다. 이 점 또한 보안과 관련한 중요한 조치의 하나이다.
+
+    <br><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/MLXlXCwA0T4"
+            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
+  </xmp>
+
+  <br><iframe width="560" height="315"
+        src="https://www.youtube.com/embed/MLXlXCwA0T4"
+            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
+
+    <br><iframe width="560" height="315"
+        src="https://finance.naver.com/item/coinfo.nhn?code=011280"
+            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
+                        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>프로그래밍</title>
+    <meta charset="utf-8"
+     name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right:1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+      }
+    </style>
+  </head>
+
+  <body>
+    <header><a href="http://localhost/index.html"><h1>HTML</h1></a></header>
+
+    <nav><a href="http://localhost/index.html"><strong>go back</strong></a></nav>
+
+    <h2>number input</h2>
+
+      <xmp>
+코드1
+    <form action="inputs.php">
+     1. <input type="number"><br><br>
+   </form>
+
+코드2
+
+    <form action="inputs.php">
+     2. <input type="number" name="age" min="10" max="15">
+     <input type="submit">
+    </form>
+
+
+        *number type에서는 숫자와 e 만 입력될 수 있다.
+        *모바일디바이스에서는 입력창에 커서가 오면 자동으로 숫자입력 키보드가 뜬다
+        *2번은 범위(최소 최대)를 지정한 것이며 그 범위를 넘어서면 전송불가 메시지가 표시
+        *name="age"는 서버측에서 받아들이는 범주,필드명이며, 입력된 값은 그 필드로 넘겨진다
+           이 속성을 표시하지 않으면 값이 넘어가지 않고 브라우저 창에도 표시되지 않는다
+        *value="15"라고 표시하면 페이지가 표시될 때 입력창의 '초기값'으로 15가 표시된다.
+      </xmp>
+
+     <form action="inputs.php">
+      1. <input type="number"><br><br>
+    </form>
+
+     <form action="inputs.php">
+      2. <input type="number" name="age" value="13" min="10" max="15">
+      <input type="submit">
+     </form>
+   </p>
+
+
+  </body>
+</html>

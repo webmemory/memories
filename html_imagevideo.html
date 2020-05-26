@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>프로그래밍</title>
+    <meta charset="utf-8"
+     name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right:1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+      }
+    </style>
+  </head>
+
+  <body>
+    <header><a href="http://localhost/index.html"><h1>HTML</h1></a></header>
+
+    <nav><a href="http://localhost/index.html"><strong>go back</strong></a></nav>
+
+    <h2>이미지와 비디오 삽입하기</h2><br>
+
+    <p><h3>1.이미지</h3>
+      <xmp>
+        코드
+        <img src="imagevideosample/abstract-background.jpg"
+          width=400px height=200 alt="이미지" title="추상화">
+          *alt 이미지가 깨졌을 때 표시되는 대체문자
+          *title 이미지에 마우스를 가져가 댈 때 표시되는 이미지 이름
+
+      </xmp>
+      <img src="imagevideosample/abstract-background.jpg"
+        width=400px height=200 alt="이미지" title="추상화">
+
+    </p>
+
+    <p><h3>2.비디오</h3>
+      <xmp>
+        코드
+        두가지 방식이 있다.
+        1.하나의 인코딩방식 표시할 때
+        <video src="imagevideosample/videosample.mp4" width="500" controls></video>
+        2.동일한 비디오의 서로 다른 인코딩방식을 표시할 때.
+          브라우저에 따라 게시가능한 인코딩방식이 다를 수 있으므로 여러개의 인코딩형식
+          을 사용하여 소스를 마련한 다음 열거하여 표시하면 브라우저는 그 중 가장 잘 어울리는
+          형식을 선택하여 표시한다.
+
+        <video width="500" controls>
+          <source  src="imagevideosample/videosample.mp4">
+          <source  src="imagevideosample/videosample.ogg">
+        </video>
+
+        *이 때 controls라는 속성을 표시하면 비로소 동영상을 조작할 수 있게 되며,
+        width, controls 등의 속성을 표시하는 위치가 1,2가 다르다는 것에 주목해야 한다.
+      </xmp>
+      <video src="imagevideosample/videosample.mp4" width="500" controls></video>
+
+    </p>
+    <p>
+      <video width="500" controls>
+        <source  src="imagevideosample/videosample.mp4">
+        <source  src="imagevideosample/videosample.ogg">
+      </video>
+
+    </p>
+  </body>
+</html>

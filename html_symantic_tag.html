@@ -1,0 +1,115 @@
+<!DOCTYPE html >
+
+<html>
+
+<head>
+	<title>프로그래밍</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+	<style>
+
+	  header{
+	  	border-bottom:1px solid grey;
+	  	padding:20px
+
+	  }
+
+		header a{
+			text-decoration:none
+		}
+
+		nav{
+			border-right: 1px solid grey;
+			width:250px;
+			height:1500px;
+			float:left
+		}
+
+		strong ul{
+			list-style: none;
+		}
+
+
+		article img{
+			float:left
+
+		}
+		article p{
+			padding:1px
+		}
+		form ul li{
+			padding:1px
+		}
+여기는 스타일-화면에 표시되지 않는다. 텍스트가 은폐되는 유일한 구역
+그러나 이 텍스트 아래에 스타일 지정을 하면 그 스타일은 작동되지 않음.
+	</style>
+
+</head>
+
+<body>
+
+  <header><a href="http://localhost/index.html"><h1>HTML</h1></a>
+
+ </header>
+
+ <nav>
+ <strong><a href="http://localhost/index.html">go back</a></strong><br>
+ </nav>
+
+<body>
+<p>
+<h1>시맨틱 태그</a></h1>
+
+화면에 표시되지 않는, 프로그래머에게 정보의 층위를 알려 주는 태그</p>
+
+<h2>Nav tag</h2>
+둘러싸인 부분이 본문이 아니라 내비게이션 용 정보를 담고 있음을 프로그래머에게 알려 준다.
+
+<h2>Article tag</h2>
+둘러싸인 부분이 그것으로 둘러싸인 부분이 본문에 해당하는 것임을 알려 준다.
+
+<h2>Header tag</h2>
+둘러싸인 부분이 그것으로 둘러싸인 정보가 간판 역할을 하는 것임을 알려 준다.
+
+<h2>Label tag</h2>
+id를 통해 특정 텍스트가 다른 콘트롤, UI의 이름임을 알려 준다. label을 클릭하면 커서가 그쪽으로 이동<br>
+예)<br>
+<strong>
+
+<label for="t">text input</label>
+	<br><input id="t" type="text"><br>
+
+<label for="p">pwd input</label>
+	<br><input id="p" type="password"><br>
+
+<label for="long">long text</label>
+	<br><textarea name="text" id="long" cols="50" rows="5"></textarea>
+
+<br><br>id를 사용하기 싫으면 ui의 앞과 뒤를 label /label로 감싸줘도 된다.<br>
+
+<label>text input
+	<br><input type="text"><br>
+</label>
+
+</strong>
+
+
+
+</p>
+<xmp>
+
+article	본문
+aside	광고와 같이 페이지의 내용과는 관계가 적은 내용들
+details	기본적으로 표시되지 화면에 표시되지 않는 정보들을 정의
+figure	삽화나 다이어그램과 같은 부가적인 요소를 정의
+footer	화면의 하단에 위치하는 사이트나 문서의 전체적인 정보를 정의
+header	화면의 상단에 위치하는 사이트나 문서의 전체적인 정보를 정의
+main	문서에서 가장 중심이 되는 컨텐츠를 정의
+mark	참조나 하이라이트 표시를 필요로 하는 문자를 정의
+nav	문서의 네비게이션 항목을 정의
+section	문서의 구획들을 정의 (참고)
+time	시간을 정의
+</xmp>
+
+</body>
+</html>

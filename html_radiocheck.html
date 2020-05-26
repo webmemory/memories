@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right:1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="http://localhost/index.html"><h1>HTML</h1></a>
+    </header>
+    <nav>
+      <strong><a href="http://localhost/index.html">go back</a></strong>
+    </nav>
+    <form action="http://localhost/radio.php">
+
+      <p>
+        <h2>라디오버튼</h2>
+        빨<input type="radio" name="color" value="red" checked>
+        노<input type="radio" name="color" value="yellow">
+        파<input type="radio" name="color" value="blue">
+      </p>
+      <p>
+        빨강<input type="radio" name="color2" value="red">
+        노랑<input type="radio" name="color2" value="yellow">
+        파랑<input type="radio" name="color2" value="blue">
+
+
+      <p>라디오 버튼은 name 값이 같은 것끼리 그루핑된다. 윗줄은 name="color"
+      아랫줄은 name="color2"</p>
+      <p>
+        <h2>체크박스</h2>
+          빨<input type="checkbox" name="color3" value="red">
+          노<input type="checkbox" name="color3" value="yellow">
+          파<input type="checkbox" name="color3" value="blue" checked>
+      </p>
+      <p>checked라는 속성으로 페이지 오픈시 디폴트 선택을 할 수 있게 한다<br>
+      submit 버튼은 어디에 위치하든, 그 페이지의 모든 입력정보를 서버로 전송한다<br>
+    submit 버튼에 속성값 value="제출"을 넣으면 버튼 표시글자가 제출로 바뀐다</p>
+
+       <p><h2>서브밋, 텍스트, 리셋, 일반버튼, hidden</h2></p>
+        <p>submit button:<input type="submit" value="제출"></p>
+        <p>common button<input type="button" value="일반버튼" onclick=alert("Hello")> </p>
+        <p>input window<input type="text" value="텍스트인풋" name="text"></p>
+        <p>reset button<input type="reset"></p><br>
+        <p>hidden <input type="hidden" name="hide" value="hidden info"></p>
+      text입력창에 입력한 글자를 전송하려면 name 속성을 지정해야 한다.<br>
+      리셋 버튼을 사용하면 문서입력 내용을 지울 수 있다. 단 value 속성으로 디폴트입력된 정보는 못지운다
+      <br>hidden type는 화면에 보이는 입력ui없이 서버로 정보를 전송
+
+    </form>
+  </body>
+</html>

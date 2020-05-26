@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right: 1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="http://localhost/index.html"><h1>HTML</h1></a>
+    </header>
+
+    <nav>
+      <strong><a href="http://localhost/index.html">go back</a></strong><br>
+    </nav>
+    <form action="http://localhost/color.php">
+      <select name="color1" id="">
+        <option value="">""</option>
+        <option value="red">빨강</option>
+        <option value="blue">파랑</option>
+        <option value="yellow">노랑</option>
+      </select><br><br>
+      <select name="color2" multiple id="">
+        <xmp>#multiple이라는 속성을 줘서 다중 선택이 가능하게 한다.</xmp>
+        <option value="red">빨</option>
+        <option value="blue">파</option>
+        <option value="yellow">노</option>
+      </select><br><br>
+      <input type="submit">
+    </form>
+  </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>프로그래밍</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      header{
+        border-bottom:1px solid grey;
+        padding:20px;
+      }
+      header a{
+        text-decoration:none
+      }
+      nav{
+        border-right:1px solid grey;
+        width:250px;
+        height:1500px;
+        float:left
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="http://localhost/index.html"><h1>HTML</h1></a>
+    </header>
+
+    <nav>
+      <a href="http://localhost/index.html"><strong>go back</strong></a>
+    </nav>
+
+    <h2>file 전송</h2>
+<xmp>
+코드
+<form action="http://localhost/upload.php" method="post" enctype="multipart/form-data">
+  <input type="file" name="files">
+  <input type="submit">
+
+</xmp>
+    <form action="http://localhost/upload.php" method="post"
+                                   enctype="multipart/form-data">
+      <input type="file" name="files">
+      <input type="submit">
+    </form>
+    <br> #세로 보더에 플로우트 레프트 설정을 하지 않으면 본문의 컨텐츠가 세로보더 하단에 들어가게 된다.
+
+  </body>
+</html>
