@@ -6,6 +6,8 @@
 	<title>프로그래밍</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+
+	<script src="color_change.js">	</script>
 	<style>
 
 	  header{
@@ -16,9 +18,16 @@
 
 		header a{
 			text-decoration:none;
-			float:left;
+			position:absolute;
+			top:30px;
+			left:80px
+	}
 
-		}
+	  header input{
+	  	position:absolute;
+			left: 195px;
+			top: 60px;
+  }
 
 
 여기는 스타일-화면에 표시되지 않는다. 텍스트가 은폐되는 유일한 구역
@@ -32,9 +41,14 @@ a 태그에 text-decoration:none을 추가하면 밑줄이 없어진다.
 
 <body>
 
-  <header><a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
-	<img src="imagevideosample/abstract-background.jpg"
-		width=400px height=100 alt="이미지" title="추상화"/>
+  <header>
+
+		<img src="imagevideosample/abstract-background.jpg"
+			width=400px height=100 alt="이미지" title="추상화"/>
+
+	<input type="button" value='to night mode' onclick="
+		nightDayHandler(this)">
+	<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
 
  </header>
  <nav>
