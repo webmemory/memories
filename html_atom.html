@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><script src="color_change.js">	</script>
     <title>프로그래밍</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <style>
-      header{
-        border-bottom:1px solid grey;
-        padding:20px
-      }
-      header a{
-        text-decoration:none
-      }
+    header{
+	  	border-bottom:1px solid grey;
+	  	padding:20px
+
+	  }
+
+		header a{
+			text-decoration:none;
+			position:absolute;
+			top:30px;
+			left:80px
+	}
+
+	  header input{
+	  	position:absolute;
+			left: 195px;
+			top: 60px;
+  }
 
 
     </style>
   </head>
 
   <body>
-		<header>
-      <a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
-    </header>
+    <header>
+
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
 
 
     <p>
@@ -58,6 +76,67 @@
           esc키를 눌러서 커서를 해제한다.
     </p>
 
+    <p>
+      #<strong>주석처리하기</strong> <br>
+          주석처리하고 싶은 부분을 선택한 다음 ctrl + / 를 누르면 해당 부분이 주석으로처리/해제된다.
+          선택하지 않은 상태에서 누르면 커서가 있는 줄 전체를 주석으로 처리/해제한다.
+    </p>
+<p>
 
+    Ctrl + F<br>
+    찾기/바꾸기<br><br>
+    Ctrl + Shift + F<br>
+    프로젝트 전체에서 찾기, 바꾸기를 한꺼번에 할 수 있다<br><br>
+    Ctrl + E<br>
+    선택 영역을 찾기/바꾸기<br><br>
+    Ctrl + G<br>
+    라인 번호를 입력할 수 있는 창이 나오며 거기에 번호를 컨트롤 키를 누르고 커서를 아래로 이동해도 라인선택이 된다.
+    블럭 매칭<br><br>
+    Ctrl + J<br>
+    라인 조인: 아래쪽 라인이 올라와 현재 라인과 결합한다.<br><br>
+    Ctrl + L<br>
+    라인 선택: 커서가 아래쪽 라인으로 이동하며 줄 단위로 아래줄이 계속해서 선택된다.
+     컨트롤 키를 누르고 커서를 아래로 이동해도 라인선택이 된다.
+    <br><br>
+    Ctrl + D<br>
+    현재 단어 선택: 현재 커서가 놓인 단어를 선택하며 이후 전체 범위에서 같은 단어를 계속 선택<br><br>
+    Ctrl + Backspace, Delete<br>
+    단어 별 삭제<br><br>
+    Ctrl + Shift + K<br>
+    현재 라인 삭제<br><br>
+    Ctrl + Shift + D<br>
+    현재 라인 다음 라인으로 복사, 모든 라인이 한 줄 아래로 밀린다<br><br>
+    Ctrl + [, ]<br>
+    들여쓰기<br><br>
+    Ctrl + Alt + [, ]<br>
+    코드 폴딩 토글: 현재 커서가 위치한 태그 전체를 폴딩하여 안 보이게 하거나 보이게 함<br><br>
+    Ctrl + Shift + Alt + [, ]<br>
+    전체 코드 폴딩 토글<br><br>
+    Ctrl + ←, →<br>
+    커서가 단어 별 이동<br><br>
+    Ctrl + ↑, ↓<br>
+    현재 현재 커서가 있는 라인 자체를 위, 아래로 이동<br><br>
+    Ctrl + Alt + ↑, ↓<br>
+    다중 커서 삽입: 위, 아래로, 왼쪽에서 현재 커서가 있는 위치까지의 거리와 동일한 위치로<br>
+      커서를 표시한다. ()영어알파벳 1개와 한글 한 글자를 동일하게 인식하는 것에 주의)<br><br>
+    Ctrl + Enter<br>
+    현재 라인 아래로 개행: 커서가 있는 라인 아래쪽을 빈 칸으로 벌리고 그리로 커서 이동<br><br>
+    Ctrl + Shift + Enter<br>
+    현재 라인 위로 개행<br><br>
+    Ctrl + space<br>
+    코드 힌트 보기<br><br>
+    Shift + 방향키<br>
+    텍스트 선택: 좌우 화살표를 클릭하면 좌우로 한글자씩 선택, 상하로 클릭하면 한 줄씩 선택<br><br>
+    Shift + Ctrl + ←, →<br>
+    단어별 텍스트 선택<br><br>
+    참고<br>
+    Atom에디터는 컴파일(실행)기능이 따로 없기 때문에 번거로움이 있다.<br>
+    따라서 이런 번거로움을 해결해줄 script라는 패키지를 이용하여 해당 기능을 추가할 수 있다.<br>
+<br>
+    ▶ 실행 단축키 : ctrl + shift + b<br>
+
+<br>
+    [출처]https://gunbin91.github.io/etc/2018/08/27/atomShortcut.html  [gunbin91 Blog]<br>
+</p>
   </body>
 </html>
