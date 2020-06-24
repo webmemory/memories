@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>    header{
+ 	  	border-bottom:1px solid grey;
+ 	  	padding :0px
+
+ 	  }
+
+ 		header a{
+ 			text-decoration:none;
+ 			position:absolute;
+ 			top:0px;
+ 			left:80px
+ 	}
+
+ 	  header input{
+ 	  	position:absolute;
+ 			left: 195px;
+ 			top: 30px;
+   }</style>
+  </head>
+
+
+  <body>
+    <header>
+
+      <img src="imagevideosample/abstract-background.jpg"
+        width=400px height=100 alt="이미지" title="추상화"/>
+
+      <input type="button" value='to night mode' onclick="
+      nightDayHandler(this)">
+      <a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+     </header>
+    <h2>div span</h2>
+    <br>div와 span은 디자인을 위한 무의미 태그이며, div는 block element
+    <br>span은 inline element.
+    <br>width는 blocklevel의 박스에만 적용된다.
+    <br>하나의 박스를 다른 박스로 둘러싸려면 부모 태그를 만들어야 한다.
+    <br>
+
+<style>
+    div,span{font-size:20px; font-weight:bolder; border-width:5px;border-style:solid}
+    #mother{border-width:10px; border-color:red}
+    #span{width:300px;border-width:5px; border-color:pink;padding:5px}
+    div{display:grid;grid-template-columns:1fr 1fr 2fr }
+    span{display:grid;grid-template-columns:100px 200px}
+</style>
+<br><br>
+  <div id="mother">
+    <div>hello</div>
+    <div>world</div>
+    <div>welcome</div>
+  </div>
+<br>
+  <span id="span">
+    <span>hello</span>
+    <span>world</span>
+
+  </span>
+<br><br>
+  </body></html>

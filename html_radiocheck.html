@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
     <title>프로그래밍</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
-      header{
-        border-bottom:1px solid grey;
-        padding:20px
-      }
-      header a{
-        text-decoration:none
-      }
+    header{
+     border-bottom:1px solid grey;
+     padding :0px
+
+   }
+
+   header a{
+     text-decoration:none;
+     position:absolute;
+     top:0px;
+     left:80px
+ }
+
+   header input{
+     position:absolute;
+     left: 195px;
+     top: 30px;
+  }
 
     </style>
   </head>
 
   <body>
     <header>
-      <a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
-    </header>
 
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
     <form action="https://webmemory.github.io/memories/radio.php">
 
       <p>

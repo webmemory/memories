@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    header{
+      border-bottom:1px solid grey;
+      padding :0px
+
+    }
+
+    header a{
+      text-decoration:none;
+      position:absolute;
+      top:0px;
+      left:80px
+   }
+
+    header input{
+      position:absolute;
+      left: 195px;
+      top: 30px;
+   }
+</style>
+  </head>
+
+
+  <body>
+    <header>
+
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
+    <h2>css 소개</h2><br>
+    css언어가 등장하기 전에는 예를 들어 font tag를 이용하여 텍스트의 문자 색을 표시했다.<br>
+      <br><br>예) <font color="red">css 이전의 font color</font>
+      <xmp>  코드:  <font color="red">  css 이전의 font color </font> </xmp>
+
+     <br>1.style tag
+      그러나 이렇게 꾸밈을 위한 태그가 다른 정보중심 태그와 섞이면 텍스트를 검색한다든가<br>
+      할 때 장애가 된다. 그래서 꾸밈을 위한 언어를 독립적으로 개발, 사용하게 되었다<br>
+      먼저 css언어는 html 문서 내에 style ... /style 태그태그로 시작과 끝을 경계지운 후<br>
+      효과를 지정한다. 그러면 거기서 규정된 룰이 화일 전체에 작용된다.<br>
+      style 태그는 코드가독성을 위해 일반적으로 head태그 안에 넣지만 아무곳에 배치해도<br>
+      예를 들어 맨 뒤에 배치해도 작용한다.
+      또한 style 태그를 분리하여 여러 곳에 배치해도 작용한다<br><br>
+
+
+
+    2.style attribute<br>
+    style 태그가 화일 전체에 작용을 하는 것이라면, 그 중 일부에 대해 다른 효과를 주고 싶을<br>
+    때에는 원하는 html tag 안에 속성으로 지정한다.<br><br>
+
+    (예시)<br>
+    다음 예는 문서 안의 모든 p태그의 글자를 파란색으로 표시하되 세번째의 것만은 빨간색으로<br>
+    표시하는 예이다. 또한 이 화일의 다른 효과를 위해 작성한 style 태그는 head태그 안에도<br>
+    별도로 표시되어 있다는 것을 알린다. 즉 이 화일 안에 style태그는 두 군데에 있다는 것이다.<br>
+
+
+    <br>예)css 이후의 font
+
+      <p> css 이후의 font </p>
+      <p> css 이후의 font </p>
+      <p style="color:red"> css 이후의 font </p>
+    <style> body p {color:blue; text-decoration:underline} </style>
+
+    <xmp>코드
+    <p> css 이후의 font </p>
+    <p> css 이후의 font </p>
+    <p style="color:red"> css 이후의 font </p>
+
+    <style> body p {color:blue; text-decoration:underline} </style>
+    </xmp>
+
+
+  </body>
+</html>

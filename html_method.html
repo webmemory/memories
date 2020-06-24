@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
     <title>프로그래밍</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <style>
-      header{
-        border-bottom:1px solid grey;
-        padding:20px
-      }
-      header a{
-        text-decoration:none
-      }
+    header{
+      border-bottom:1px solid grey;
+      padding :0px
+
+    }
+
+    header a{
+      text-decoration:none;
+      position:absolute;
+      top:0px;
+      left:80px
+  }
+
+    header input{
+      position:absolute;
+      left: 195px;
+      top: 30px;
+  }
 
     </style>
   </head>
 
   <body>
     <header>
-      <a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
-    </header>
 
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
     <p>#form 태그에 action 외에 method 속성을 표시하지 않으면 전송method는 자동으로<br>
       get method로 지정되며, 이 때에는 서버로 전송하는 정보가 url을 통해서 전송되며, 브라우져주소창에 표시된다.
       <br> method = "post" 로 속성을 주면 정보가 url이 아닌 방식으로 전송되며,서버로 전달하는 정보가 표시되지 않는다.

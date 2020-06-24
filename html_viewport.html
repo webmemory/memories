@@ -2,22 +2,30 @@
 
 <html>
 
-<head>
+<head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
 	<title>프로그래밍</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,inital-scale=1.0">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<style>
 
-	  header{
-	  	border-bottom:1px solid grey;
-	  	padding:20px
+	header{
+		border-bottom:1px solid grey;
+		padding :0px
 
-	  }
+	}
 
-		header a{
-			text-decoration:none
-		}
+	header a{
+		text-decoration:none;
+		position:absolute;
+		top:0px;
+		left:80px
+}
 
+	header input{
+		position:absolute;
+		left: 195px;
+		top: 30px;
+}
 		strong ul{
 			list-style: none;
 		}
@@ -41,17 +49,31 @@
 
 <body>
 
-  <header><a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+<header>
+
+	<img src="imagevideosample/abstract-background.jpg"
+		width=400px height=100 alt="이미지" title="추상화"/>
+
+	<input type="button" value='to night mode' onclick="
+	nightDayHandler(this)">
+	<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
 
  </header>
-
 <body>
 
 <p>모바일웹에서 볼 수 있도록 화면 크기를 조정해 주는 메타태크를 사용.	모바일 디바이스 크기에 맞춰 화면을 보여 준다.기본 형식은 아래와 같다.</p>
+
+<p>initial-scale=1.0으로 해 놓으면 body 태그 사이에서 1. 아무런 태그 없이 글을 쓰거나, 2.p태그 br 태그만 사용하여 글을 쓸 경우
+문자 크기 1.0 을 유지하면서 자동으로 줄바꿈을 해 준다.
+화면 크기에 맞춰 줄바꿈이 된다. </p>
+
+<p>그러나 이미지 등은 줄바꿈이 되지 않으며, 또한 xmp 태그로 묶은 부분도 줄바꿈이 되지 않아 화면에 가려지게 된다.</p>
+
+<p>하지만 width=divice-width 만 규정하고 initial-scale=1.0을 주지 않으면, 어떤 컨텐츠라도 모두 화면크기에 맞춰 자동으로 글자크기가 조정된다.</p>
 <xmp>
 <!DOCTYPE html >
 <html>
-<head>
+<head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
 	<title>프로그래밍</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,inital-scale=1.0">

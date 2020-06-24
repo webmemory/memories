@@ -4,7 +4,7 @@
 <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
   <title>프로그래밍</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <style>
   header{
     border-bottom:1px solid grey;
@@ -17,13 +17,13 @@
     position:absolute;
     top:0px;
     left:80px
-}
+ }
 
   header input{
     position:absolute;
     left: 195px;
     top: 30px;
-}
+ }
 
   </style>
 </head>
@@ -41,30 +41,15 @@
 
 	 </header>
 
+
   <p><h2>외부 문서 삽입: iframe</h2></p>
-<p>
+
   <xmp>
     기본코드
     <body>
       <iframe src="http://opentutorials.org" frameborder="10" width="500" height="500"></iframe>
     </body>
   </xmp>
-</p>
-  <iframe src="http://opentutorials.org" frameborder="10" width="500" height="500"></iframe>
-
-  <xmp>
-  다음은 유튜브 동영상 아래 공유->퍼가기 에서 나오는 코드를 그대로 복사해 붙인 것.
-
-    <br><iframe width="560" height="315"
-        src="https://www.youtube.com/embed/MLXlXCwA0T4"
-            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
-                        gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </xmp>
-
-  <br><iframe width="560" height="315"
-        src="https://www.youtube.com/embed/MLXlXCwA0T4"
-            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
-                        gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <xmp>
   다음은 iframe 에 sandbox라는 속성을 주었을 때 나오는 결과. sandbox는 불러들인
@@ -81,15 +66,7 @@
                         gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
   </xmp>
 
-  <br><iframe width="560" height="315"
-        src="https://www.youtube.com/embed/MLXlXCwA0T4"
-            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
-                        gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
 
-    <br><iframe width="560" height="315"
-        src="https://finance.naver.com/item/coinfo.nhn?code=011280"
-            frameborder="20" allow="accelerometer; autoplay; encrypted-media;
-                        gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </body>
 

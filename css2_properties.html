@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    header{
+      border-bottom:1px solid grey;
+      padding :0px
+
+    }
+
+    header a{
+      text-decoration:none;
+      position:absolute;
+      top:0px;
+      left:80px
+  }
+
+    header input{
+      position:absolute;
+      left: 195px;
+      top: 30px;
+  }
+  </style>
+  </head>
+
+
+  <body>
+    <header>
+
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
+    <h2>css 소개2-세부적인 식별자 class, id</h2>
+
+    <br>문자의 크기 font-size 배치 text-align:center,left,right,justify 색깔 color<br>
+
+    <br>식별자는 태그 클래스 아이디가 있다.
+    <br>*css에서 html 태그의 속성인 클래스는 .  아이디는 #으로 표시한다.
+    <br>*동일한 태그에서 아이디는 한번만 사용되며 클래스는 제한없이 사용된다.
+    <br>*클래스/id 이름만 같은면 될 경우 태그p를 표시하지 않고, .a, .b, #c,...로 하면 된다
+    <br>*식별자가 동일한 태그의 속성일 때 id가 class보다 우선 적용되며
+    <br>*식별자가 동일할 경우 나중 나온 것이 먼저 나온 것에 우선적용된다.<br><br>
+
+예)
+    <style>
+    p.a{font-size:10px;text-align:left;color:red}
+    p.b{font-size:15px;text-align:left;color:grey}
+    p.c{font-size:20px;text-align:center;color:blue}
+    p.d{font-size:25px;text-align:left;color:pink}
+    p.e{font-size:30px;text-align:left;color:purple}
+    #kk{font-size:30px;text-align:left;color:black}
+    </style>
+
+    <p class="a">a.문자의 크기 색깔 배치</p>
+    <p class="b">b.문자의 크기 색깔 배치</p>
+    <p class="c">c.문자의 크기 색깔 배치</p>
+    <p class="d">d.문자의 크기 색깔 배치</p>
+    <p id="kk" class="e">e.문자의 크기 색깔 배치</p>
+<xmp>코드
+  <style>
+  p.a{font-size:10px;text-align:left;color:red}
+  p.b{font-size:15px;text-align:left;color:grey}
+  p.c{font-size:20px;text-align:center;color:blue}
+  p.d{font-size:25px;text-align:left;color:pink}
+  p.e{font-size:30px;text-align:left;color:purple}
+  #kk{font-size:30px;text-align:left;color:black}
+
+
+  </style>
+  <p class="a">a.문자의 크기 색깔 배치</p>
+  <p class="b">b.문자의 크기 색깔 배치</p>
+  <p class="c">c.문자의 크기 색깔 배치</p>
+  <p class="d">d.문자의 크기 색깔 배치</p>
+  <p id="kk" class="e">e.문자의 크기 색깔 배치</p>
+</xmp>

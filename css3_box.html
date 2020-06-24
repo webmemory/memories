@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head><script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script src="color_change.js">	</script>
+    <title>프로그래밍</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    header{
+      border-bottom:1px solid grey;
+      padding :0px
+
+    }
+
+    header a{
+      text-decoration:none;
+      position:absolute;
+      top:0px;
+      left:80px
+  }
+
+    header input{
+      position:absolute;
+      left: 195px;
+      top: 30px;
+  }</style>
+  </head>
+
+
+  <body>
+    <header>
+
+  		<img src="imagevideosample/abstract-background.jpg"
+  			width=400px height=100 alt="이미지" title="추상화"/>
+
+  		<input type="button" value='to night mode' onclick="
+  		nightDayHandler(this)">
+  		<a href="https://webmemory.github.io/memories/index.html"><h1>HTML</h1></a>
+
+  	 </header>
+
+    <h2>BOX MODEL border display padding margin,width</h2>
+    나보기가 역겨워 가실 때에는 아무 말 없이 보내드리오리다.<br>
+    10리도 못가서 <div>발병</div>나 떠난 걸 후회하리니.<br><br>
+    <h3 class='a'>padding</h3>
+    <h3 class='b'>margin</h3>
+    <h3 class='c'>display</h3>
+    <style>
+      h2,h3,div{
+        border-width:2px; border-color:red; border-style:dashed; padding:20px
+      }
+      h2{width:100px}
+      div{border-style:solid; display:inline; padding:3px}
+      .a,.b,.c{border-width:1px;display:inline; border-style:solid; padding:5px}
+      .b{margin-left:20px;margin-right:5px}
+
+      xmp{font-size:15px}
+    </style>
+
+    <xmp>
+      코드
+      <h2>BOX MODEL border display padding margin,width</h2>
+      나보기가 역겨워 가실 때에는 아무 말 없이 보내드리오리다.<br>
+      10리도 못가서 <div>발병</div>나 떠난 걸 후회하리니.<br><br>
+      <h3 class='a'>padding</h3>
+      <h3 class='b'>margin</h3>
+      <h3 class='c'>display</h3>
+      <style>
+        h2,h3,div{
+          border-width:2px; border-color:red; border-style:dashed; padding:20px
+        }
+        h2{width:100px}
+        div{border-style:solid; display:inline; padding:3px}
+        .a,.b,.c{border-width:1px;display:inline; border-style:solid; padding:5px}
+        .b{margin-left:20px;margin-right:5px}
+
+        xmp{font-size:15px}
+      </style>
+    프로퍼티 중 display는 특별히 설정하지 않을 때,
+    h, div 태그 같은 blocklevel element에 대해서는
+    디폴트값이 block(화면 너비 전체 사용),
+    a 태그 같은 inline level element에 대해서는
+    디폴트가 inline(태그에 표시된 내용을 둘러쌈)이다.
+
+    blocklevel element의 가로 길이를 특정하는 것이 width property
+    width가 content보다 짧으면 content가 자동으로 줄바꿈이 된다.
+    단 띄어쓰기 스페이스 대신 커머가 있는 부분은 줄바꿈이 되지 않는다.
+
+    border에 대해, padding은 안쪽에 대한 간격, margin은 바깥쪽에 대한 간격.
+    border-width:0px로 하면 경계가 있되 보이지 않는 것이 된다.
+
+    동일한 프러퍼티를 가진 식별자(태그,클래스,아이디)들은 커머로 연결해서
+    코딩을 절약할 수 있으며, 동일한 식별자에 대해서는 나중에 나온 것이
+    우선 적용되므로 필요할 경우 추가하여 사용할 수 있다.
+
+
+    </xmp>
+
+  </body>
+</html>
